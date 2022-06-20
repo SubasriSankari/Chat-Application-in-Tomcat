@@ -1,0 +1,97 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="SampleApps" version="2.5">
+  
+  <display-name>Chat Application</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+
+
+  <servlet>
+    <servlet-name>signup</servlet-name>
+    <servlet-class>SignUpServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>signup</servlet-name>
+    <url-pattern>/SignUpServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>LoginPageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/LoginPageServlet</url-pattern>
+  </servlet-mapping>  
+  
+  
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>Logout</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>chatWindow</servlet-name>
+    <servlet-class>ChatWindow</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>chatWindow</servlet-name>
+    <url-pattern>/ChatWindow</url-pattern>
+  </servlet-mapping>  
+  
+  
+  <servlet>
+    <servlet-name>UserChatWindow</servlet-name>
+    <servlet-class>UserChatWindow</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UserChatWindow</servlet-name>
+    <url-pattern>/UserChatWindow</url-pattern>
+  </servlet-mapping>   
+    
+  
+  <servlet>
+    <servlet-name>IndividualChat</servlet-name>
+    <servlet-class>IndividualChat</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>IndividualChat</servlet-name>
+    <url-pattern>/IndividualChat</url-pattern>
+  </servlet-mapping> 
+
+  
+  <servlet>
+    <servlet-name>GetAllUser</servlet-name>
+    <servlet-class>GetAllUser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetAllUser</servlet-name>
+    <url-pattern>/GetAllUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AuthenticateUser</servlet-name>
+    <servlet-class>AuthenticateUser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AuthenticateUser</servlet-name>
+    <url-pattern>/AuthenticateUser</url-pattern>
+  </servlet-mapping>
+
+    
+</web-app>
